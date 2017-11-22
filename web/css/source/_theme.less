@@ -1,0 +1,118 @@
+// /**
+//  * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Blank theme overrides
+//  Author: Fejie S. Fariolen
+//  _____________________________________________
+
+//  Theme file should contain declarations (overrides) ONLY OF EXISTING variables
+//  Otherwise this theme won't be available for parent nesting
+//  All new variables should be placed in local theme lib or local theme files
+
+body {
+	font-family: 'Quicksand', sans-serif;
+
+	.page-header {
+
+	    padding-bottom: initial;
+    	margin: initial;
+
+    	.panel {
+			margin-bottom: initial;
+		    background-color: initial;
+		    border: initial;
+		    border-radius: initial;
+		}
+	}
+}
+
+.nav-sections-item-content {
+	    border-bottom: 1px solid rgba(120, 191, 54, 0.4);
+	    border-top: 1px solid #d8d8d8;
+}
+
+.page-header .panel.wrapper {
+	background-color: #78bf36;
+}
+
+.header.panel > .header.links > li.welcome, .header.panel > .header.links > li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.navigation .level0.active > .level-top {
+	color: #78bf36;
+	border-color: transparent;
+}
+
+.action.advanced {
+	    color: #737272;
+    font-size: 12px;
+}
+
+.block-search {
+	width: 350px;
+}
+
+#search {
+	    border: 1px solid #78bf36;
+    padding: 20px;
+    box-shadow: none;
+}
+
+.block-search .nested {
+	right: 1px;
+}
+
+.block-search .action.search:before {
+	content: '\f2eb';
+    font-family: 'FontAwesome';
+    line-height: 32px;
+}
+
+.minicart-wrapper .action.showcart:before,.minicart-wrapper .action.showcart.active:before {
+	content: '\f2fa';
+    font-family: 'FontAwesome';
+    font-size: 50px;
+    line-height: 40px;
+    color: #78bf36;
+}
+
+.faqs:before {
+	content: '\f2cc';
+    font-family: 'FontAwesome';
+        -webkit-font-smoothing: antialiased;
+    font-size: 40px;
+    line-height: 45px;
+    color: #8f8f8f;
+    margin: 0;
+    vertical-align: top;
+    display: inline-block;
+    font-weight: normal;
+    overflow: hidden;
+    speak: none;
+    text-align: center;
+}
+
+.link.wishlist a:before,.authorization-link a:before {
+	font-family: 'FontAwesome';
+    -webkit-font-smoothing: antialiased;
+    padding-right: 7px;
+}
+
+.link.wishlist a:before {
+	content: '\f234';
+}
+
+.link.wishlist a:hover:before {
+	color: red;
+	content: '\f233';
+
+}
+
+.authorization-link a:before {
+	content: '\f2fb';
+}
